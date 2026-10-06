@@ -1,0 +1,93 @@
+# Lament for the Fallen South — Background Image Prompts
+
+These prompts are for background generation only. Generate clean images without titles, subtitles, UI, logos, watermarks, captions, calligraphy, or readable writing. Add all game text in Godot afterward.
+
+## Shared visual direction
+
+Use this visual direction with every prompt:
+
+"horizontal 16:9 game background, restrained monochrome Chinese ink wash environment, aged rice paper texture, charcoal black and soft gray values, subtle indigo-gray atmosphere, sparse muted vermilion accents only when specified, poetic negative space, layered brushwork, cinematic composition, quiet melancholy, elegant 2D visual novel background, no readable marks"
+
+## Shared negative prompt
+
+"text, letters, Chinese characters, Japanese characters, Korean characters, calligraphy, inscriptions, subtitles, captions, title, logo, watermark, signature, stamp, seal script, readable writing, pseudo-text, random symbols, UI, buttons, frame, border, speech bubble, comic panel, photorealism, glossy 3D render, oversaturated colors, modern objects, modern buildings, cars, electricity wires"
+
+## 01 — Start screen
+
+STYLE: restrained monochrome Chinese ink wash environment, aged rice paper texture, charcoal black and soft gray values, sparse muted vermilion accents, poetic negative space, layered brushwork, cinematic 2D visual novel background, quiet melancholy, horizontal 16:9 game background.
+
+PROMPT: A nearly empty late-night scholar's desk seen from the front, one closed inkstone, a single brush resting beside a completely blank scroll, an extinguishing oil lamp, deep shadow surrounding the desk, a large quiet empty area in the upper center for a game title, no visible person, no written marks on the scroll.
+
+## 02 — Opening cutscene / CG
+
+STYLE: restrained monochrome Chinese ink wash environment combined with a simplified graphic manga-style character, aged rice paper texture, charcoal black and soft gray values, subtle muted warm tones only on the character, poetic negative space, cinematic 2D game cutscene, horizontal 16:9.
+
+PROMPT: A tired elderly Chinese scholar in a simplified graphic manga style, shown in three-quarter profile at a desk before dawn, clear expressive silhouette and restrained facial features, dark robe with minimal muted color, surrounded by a monochrome ink-wash study, empty scrolls and an oil lamp on the desk, pale winter light entering through a paper window, the character is the only element with a slightly warmer skin and robe tone, environment remains black, white and gray ink, leave calm negative space around the character, no visible writing anywhere.
+
+## 03 — Late-life study
+
+STYLE: monochrome Chinese ink wash environment, aged rice paper texture, charcoal black and soft gray values, very restrained blue-gray atmosphere, graphic manga-style human silhouette only if present, poetic negative space, quiet 2D visual novel background, horizontal 16:9.
+
+PROMPT: The same elderly scholar's study viewed from a wider angle, wooden writing desk in the foreground, blank long scroll placed clearly on the desk, inkstone, brush, ceramic lamp, wooden shelves fading into shadow, a paper window showing a distant gray river and bare branches, the room feels inhabited but abandoned by time, the scholar may appear as a small graphic manga silhouette in the background, reserved empty area around the scroll for Godot UI.
+
+## 04 — Memory 1: war banners and old camp
+
+STYLE: restrained monochrome Chinese ink wash landscape, aged rice paper texture, charcoal black and soft gray values, one sparse muted vermilion accent, graphic manga-style human silhouette, layered brushwork, poetic negative space, cinematic 2D visual novel background, horizontal 16:9.
+
+PROMPT: A distant ruined military camp under a heavy gray sky, broken wooden palisades, torn blank fabric banners without symbols, smoke dissolving into ink clouds, scattered carts and an abandoned road, a small graphic manga-style human silhouette standing far away for scale, only a faint muted vermilion glow in the distant fire, broad open space for interactive memory objects.
+
+## 05 — Memory 2: palace and falling leaves
+
+STYLE: monochrome Chinese ink wash architecture and landscape, aged rice paper texture, charcoal black and soft gray values, sparse muted ochre accent, restrained manga-style human figure, misty layered brushwork, historical melancholy, poetic negative space, cinematic 2D game background, horizontal 16:9.
+
+PROMPT: A deserted ancient palace courtyard in late autumn, distant rooflines and a broken corridor fading into mist, fallen leaves drifting across empty stone steps, one damaged wooden pillar, a small manga-style human figure partly obscured by the architecture, pale gray sky, sparse muted ochre leaves as the only color accent, melancholy historical distance.
+
+## 06 — Memory 3: the silent loyalist
+
+STYLE: monochrome Chinese ink wash battlefield aftermath, aged rice paper texture, charcoal black and soft gray values, restrained graphic manga-style figure with a clear silhouette, one muted vermilion accent, solemn 2D visual novel background, sparse composition, horizontal 16:9.
+
+PROMPT: A quiet battlefield aftermath at dusk, a solitary manga-style robed figure kneeling beside an abandoned helmet and a folded piece of blank cloth, distant hills and broken spears reduced to soft ink strokes, restrained emotional posture, one small muted vermilion accent on a thread or cloth edge, no blood splatter.
+
+## 07 — Memory 4: poisoned water and high mountains
+
+STYLE: restrained monochrome Chinese ink wash landscape, aged rice paper texture, charcoal black water and soft gray mountains, subtle cold blue-gray tint only in the water, graphic manga-style traveler, layered brushwork, quiet melancholy, poetic negative space, cinematic 2D game background, horizontal 16:9.
+
+PROMPT: A long ancient road between dark poisonous-looking water and steep distant mountains, three empty roadside pavilions receding into fog, a lone manga-style traveler seen from behind, sparse reeds bending in the wind, black water rendered with layered brush strokes, soft gray mountains, a very subtle cold blue-gray tint in the water only.
+
+## 08 — Memory 5: black water and ice
+
+STYLE: dreamlike monochrome Chinese ink wash winter landscape, aged rice paper texture, charcoal black and soft gray values, cold blue-gray highlights only on fractured ice, tiny graphic manga-style traveler, unstable blurred boundaries, cinematic 2D visual novel background, horizontal 16:9.
+
+PROMPT: A chaotic winter pass after a storm, black river water, green-gray mud, fractured ice crossing the foreground like a false shoreline, windblown snow resembling sand, a tiny manga-style traveler struggling in the distance, blurred boundaries and unstable horizon, dreamlike but readable composition.
+
+## 09 — Memory 6: the empty flying goose
+
+STYLE: nearly monochrome Chinese ink wash river plain, aged rice paper texture, charcoal black and soft gray values, extremely restrained desaturated blue accent in the water, graphic manga-style solitary figure, vast poetic negative space, quiet melancholy, cinematic 2D game background, horizontal 16:9.
+
+PROMPT: A vast pale river plain at twilight, distant mountains separated by mist, one small migrating goose flying alone toward an empty horizon, a manga-style solitary figure standing beside dark water in the lower corner, a faint warm gray glow in the sky, feeling of departure without return, large empty negative space.
+
+## 10 — Writing / collage scene
+
+STYLE: restrained monochrome Chinese ink wash tabletop, aged rice paper texture, charcoal black and soft gray values, subtle warm oil-lamp light, poetic negative space, clean 2D visual novel background, horizontal 16:9, designed for readable Godot UI overlays.
+
+PROMPT: A top-down and slightly angled view of an old wooden writing desk, several blank rice-paper strips scattered around one long central blank scroll, inkstone, brush, a small oil lamp, traces of gray ink smudges and erased brush marks but no recognizable characters, the central paper remains clean and readable for Godot-generated text and draggable fragments, quiet creative tension.
+
+## 11 — Inspiration emergence background
+
+STYLE: abstract monochrome Chinese ink wash landscape, aged rice paper texture, charcoal black and soft gray brushwork, restrained vermilion and blue-gray convergence accents, graphic manga-style scholar silhouette, solemn poetic 2D cinematic game background, expansive negative space, horizontal 16:9.
+
+PROMPT: The late-life study dissolving into a vast abstract landscape of water, mountains, drifting paper fragments and expanding ink clouds, the elderly manga-style scholar reduced to a small silhouette at the center, black and gray brushwork pulling toward a single restrained vermilion and blue-gray convergence, a large area of pale blank paper-like light around the center, solemn and beautiful rather than spectacular.
+
+## Suggested image-to-image consistency note
+
+For every generation, keep the same camera language, paper texture, gray scale, brush density, horizon softness, and restrained color palette. Use the opening cutscene or study image as a style reference for later memory backgrounds. Generate the environment and the manga-style character separately when possible, then layer them in Godot so the selected memory object can be colorized independently.
+
+## Suggested restrained color palette
+
+- Ink black: #191817
+- Paper gray: #D8D2C6
+- Cold water blue-gray: #667C83
+- Old vermilion: #8B4036
+- Aged ochre: #A48A5A
+
+Use color sparingly. A selected object should be the only strongly colored element in a memory scene.

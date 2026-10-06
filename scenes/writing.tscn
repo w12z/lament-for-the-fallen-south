@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/writing.gd" id="1_writing"]
+[ext_resource type="PackedScene" path="res://scenes/ui/paper_background.tscn" id="2_paper"]
+
+[node name="Writing" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_writing")
+
+[node name="PaperBackground" parent="." instance=ExtResource("2_paper")]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 160
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 160
+theme_override_constants/margin_bottom = 48
+
+[node name="Content" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 40
+
+[node name="RoundLabel" type="Label" parent="MarginContainer/Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="MarginContainer/Content"]
+layout_mode = 2
+theme_type_variation = &"InkNote"
+text = "创作场景占位：之后在这里拼贴词句，留下残卷。"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="FinishButton" type="Button" parent="MarginContainer/Content"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "收卷 · 返回书房"

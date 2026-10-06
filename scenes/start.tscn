@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/start.gd" id="1_start"]
+[ext_resource type="Texture2D" path="res://assets/images/backgrounds/start_background.png" id="2_background"]
+[ext_resource type="FontFile" path="res://assets/fonts/SourceHanSerifSC-Bold.otf" id="3_title"]
+
+[node name="Start" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_start")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_background")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 0.64
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 48
+
+[node name="Content" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 28
+
+[node name="Title" type="Label" parent="MarginContainer/Content"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_title")
+theme_override_font_sizes/font_size = 80
+text = "哀 江 南"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="MarginContainer/Content"]
+layout_mode = 2
+text = "Lament for the Fallen South"
+theme_type_variation = &"InkNote"
+horizontal_alignment = 1
+
+[node name="BeginButton" type="Button" parent="MarginContainer/Content"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "提笔 · 入梦"

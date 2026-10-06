@@ -1,0 +1,59 @@
+[gd_resource type="Theme" load_steps=7 format=3]
+
+[ext_resource type="FontFile" path="res://assets/fonts/SourceHanSerifSC-Medium.otf" id="1_body"]
+[ext_resource type="FontFile" path="res://assets/fonts/LXGWWenKaiMono-Medium.ttf" id="2_note"]
+
+[sub_resource type="StyleBoxFlat" id="Style_normal"]
+content_margin_left = 32.0
+content_margin_top = 12.0
+content_margin_right = 32.0
+content_margin_bottom = 12.0
+bg_color = Color(0.93, 0.90, 0.83, 0.65)
+border_width_bottom = 1
+border_color = Color(0.25, 0.23, 0.20, 0.45)
+
+[sub_resource type="StyleBoxFlat" id="Style_hover"]
+content_margin_left = 32.0
+content_margin_top = 12.0
+content_margin_right = 32.0
+content_margin_bottom = 12.0
+bg_color = Color(0.85, 0.81, 0.72, 0.8)
+border_width_bottom = 2
+border_color = Color(0.48, 0.23, 0.19, 1)
+
+[sub_resource type="StyleBoxFlat" id="Style_pressed"]
+content_margin_left = 32.0
+content_margin_top = 12.0
+content_margin_right = 32.0
+content_margin_bottom = 12.0
+bg_color = Color(0.48, 0.23, 0.19, 0.12)
+border_width_bottom = 2
+border_color = Color(0.48, 0.23, 0.19, 1)
+
+[sub_resource type="StyleBoxFlat" id="Style_focus"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.48, 0.23, 0.19, 0.65)
+
+[resource]
+default_font = ExtResource("1_body")
+default_font_size = 22
+Label/colors/font_color = Color(0.16, 0.15, 0.13, 1)
+Label/constants/line_spacing = 10
+Button/colors/font_color = Color(0.20, 0.18, 0.15, 1)
+Button/colors/font_hover_color = Color(0.48, 0.23, 0.19, 1)
+Button/colors/font_pressed_color = Color(0.48, 0.23, 0.19, 1)
+Button/colors/font_focus_color = Color(0.48, 0.23, 0.19, 1)
+Button/colors/font_disabled_color = Color(0.40, 0.38, 0.33, 0.5)
+Button/styles/normal = SubResource("Style_normal")
+Button/styles/hover = SubResource("Style_hover")
+Button/styles/pressed = SubResource("Style_pressed")
+Button/styles/disabled = SubResource("Style_normal")
+Button/styles/focus = SubResource("Style_focus")
+InkNote/base_type = &"Label"
+InkNote/fonts/font = ExtResource("2_note")
+InkNote/font_sizes/font_size = 20
+InkNote/colors/font_color = Color(0.40, 0.36, 0.29, 1)
