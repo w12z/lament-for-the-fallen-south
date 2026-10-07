@@ -15,7 +15,7 @@ func _ready() -> void:
 		$MemoryImage.texture = load(memory["cg"])
 	memory_title.text = memory["title"]
 	passage_label.text = memory["text"]
-	selection_label.text = "请选择你额外注意的意象"
+	selection_label.text = GameState.memory_reason + "\n请选择你额外注意的意象"
 	continue_button.disabled = true
 	for attention in memory["attention"]:
 		var button := Button.new()
