@@ -19,53 +19,61 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 mouse_filter = 2
 expand_mode = 1
 stretch_mode = 6
 
-[node name="PaperVeil" type="ColorRect" parent="."]
-layout_mode = 1
+[node name="MissingImage" type="Label" parent="."]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+theme_type_variation = &"InkNote"
+text = "此处的往事\n尚未留下图像"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PaperVeil" type="ColorRect" parent="."]
+layout_mode = 1
+anchor_top = 0.48
+anchor_right = 1.0
+anchor_bottom = 1.0
 mouse_filter = 2
-color = Color(0.90, 0.87, 0.81, 0.78)
+color = Color(0.93, 0.90, 0.83, 0.92)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
+anchor_top = 0.48
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 160
-theme_override_constants/margin_top = 48
-theme_override_constants/margin_right = 160
-theme_override_constants/margin_bottom = 48
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 16
 
 [node name="Content" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 alignment = 1
-theme_override_constants/separation = 24
+theme_override_constants/separation = 8
 
 [node name="RoundLabel" type="Label" parent="MarginContainer/Content"]
 layout_mode = 2
 theme_type_variation = &"InkNote"
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 16
 horizontal_alignment = 1
 
 [node name="MemoryTitle" type="Label" parent="MarginContainer/Content"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 42
+theme_override_font_sizes/font_size = 28
 horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="Passage" type="Label" parent="MarginContainer/Content"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 20
 size_flags_vertical = 3
 text = "选中文段占位"
 horizontal_alignment = 1
@@ -73,11 +81,12 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="AttentionHint" type="Label" parent="MarginContainer/Content"]
+visible = false
 layout_mode = 2
 text = "注意对象"
 horizontal_alignment = 1
 
-[node name="AttentionContainer" type="VBoxContainer" parent="MarginContainer/Content"]
+[node name="AttentionContainer" type="HBoxContainer" parent="MarginContainer/Content"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 8
@@ -85,10 +94,24 @@ theme_override_constants/separation = 8
 [node name="SelectionLabel" type="Label" parent="MarginContainer/Content"]
 layout_mode = 2
 theme_type_variation = &"InkNote"
+theme_override_font_sizes/font_size = 16
+autowrap_mode = 3
 text = "请选择你额外注意的意象"
 horizontal_alignment = 1
 
 [node name="ContinueButton" type="Button" parent="MarginContainer/Content"]
 layout_mode = 2
+theme_type_variation = &"PrimaryButton"
 size_flags_horizontal = 4
 text = "携此意象 · 落笔"
+
+[node name="ViewButton" type="Button" parent="."]
+layout_mode = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -192.0
+offset_top = 20.0
+offset_right = -24.0
+offset_bottom = 66.0
+theme_override_font_sizes/font_size = 18
+text = "隐去文字 · 观景"

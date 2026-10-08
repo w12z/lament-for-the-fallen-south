@@ -158,7 +158,7 @@ scripts/paper_background.gd   纸张、颗粒和淡墨背景绘制
 themes/ink_theme.tres         字体、颜色、按钮和纸墨 UI 主题
 ```
 
-项目已经设置 Godot 4.7.2、1280×800 设计尺寸、`canvas_items` 缩放和全局 `GameState` 自动加载。默认字体使用思源宋体，批注和提示使用霞鹜文楷；许可证位于 `assets/fonts/licenses/`。
+项目已经设置 Godot 4.7.2、1024×768（4:3）设计尺寸、`canvas_items` 等比缩放和全局 `GameState` 自动加载。回忆 CG 铺满画面并居中裁切，不拉伸；原文和注意选择位于底部半透明纸面，可通过右上角“隐去文字 · 观景”隐藏文字观看完整画面区域。默认字体使用思源宋体，批注和提示使用霞鹜文楷；许可证位于 `assets/fonts/licenses/`。
 
 ## 8. 当前已实现与未实现
 

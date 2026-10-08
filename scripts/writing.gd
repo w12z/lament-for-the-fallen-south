@@ -32,6 +32,7 @@ func _ready() -> void:
 	for material in GameState.materials:
 		var button := Button.new()
 		button.text = "%s\n%s" % [material["text"], material["note"]]
+		button.theme_type_variation = &"MaterialButton"
 		button.add_theme_font_size_override("font_size", 18)
 		button.pressed.connect(_append_fragment.bind(material))
 		material_list.add_child(button)
@@ -55,15 +56,26 @@ func _ready() -> void:
 	remove_button = _make_button(actions, "删去", _remove)
 	undo_button = _make_button(actions, "撤回", _undo)
 	finish_button.pressed.connect(_finish_round)
+	content.move_child(finish_button, content.get_child_count() - 1)
 	_refresh()
 
 
 func _make_column(parent: Control, title: String) -> VBoxContainer:
+	var panel := PanelContainer.new()
+	panel.theme_type_variation = &"InkPanel"
+	panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	parent.add_child(panel)
+	var margin := MarginContainer.new()
+	for side in ["left", "top", "right", "bottom"]:
+		margin.add_theme_constant_override("margin_" + side, 16)
+	panel.add_child(margin)
 	var column := VBoxContainer.new()
 	column.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	parent.add_child(column)
+	column.add_theme_constant_override("separation", 12)
+	margin.add_child(column)
 	var label := Label.new()
 	label.text = title
+	label.theme_type_variation = &"InkNote"
 	label.add_theme_font_size_override("font_size", 22)
 	column.add_child(label)
 	var scroll := ScrollContainer.new()
@@ -136,11 +148,18 @@ func _refresh() -> void:
 	for child in draft_list.get_children():
 		draft_list.remove_child(child)
 		child.queue_free()
+	if draft.is_empty():
+		var hint := Label.new()
+		hint.text = "纸上尚空\n\n从左侧取一句旧语，\n或先留下一行空白。"
+		hint.theme_type_variation = &"InkNote"
+		hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		draft_list.add_child(hint)
 	for fragment_index in range(draft.size()):
 		var button := Button.new()
 		button.text = "%02d  %s" % [fragment_index + 1, draft[fragment_index]["text"]]
 		button.toggle_mode = true
 		button.button_pressed = fragment_index == selected_index
+		button.theme_type_variation = &"MaterialButton"
 		button.add_theme_font_size_override("font_size", 20)
 		button.pressed.connect(_select.bind(fragment_index))
 		draft_list.add_child(button)
